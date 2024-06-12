@@ -1,0 +1,11 @@
+.main_container{
+    height:700px;
+    width:500px;
+    border-radius: 30px;
+    background-color: #cfc9c9;
+    display:flex;
+    flex-flow:row wrap;
+    box-sizing: border-box;
+    margin:50px auto;
+    
+}
