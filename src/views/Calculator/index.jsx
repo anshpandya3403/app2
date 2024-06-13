@@ -83,7 +83,7 @@ const Calculator = () => {
     };
 
     const handleBackSpace = () =>{
-    if(value){
+    if(value&&writeover){
         setValue(value.slice(0,-1));
     }
     }
