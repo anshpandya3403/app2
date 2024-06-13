@@ -44,13 +44,17 @@ const Calculator = () => {
            
         }
         else if(operators.includes(symbol)&&Calculate){
+            if(writeover){
+                setPrevious(value+symbol);
+            }
+            else{
             const answer = Calculate(`${previous}${value}`);
             const prevValue = `${answer}${symbol}`;
             setValue(answer);
             setPrevious(prevValue);
             setCalculate(true);
             setWriteOver(true);
-           
+            }
         }
         else if(symbol === '=' || symbol === 'Enter'){
             const prevValue = `${previous}${value}=`;
